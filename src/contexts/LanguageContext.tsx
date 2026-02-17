@@ -98,6 +98,12 @@ const translations = {
     'footer.address.value': 'Budapest, Magyarország',
     'footer.social': 'Közösségi média',
     'footer.copyright': 'MyWebsite. Minden jog fenntartva.',
+
+    // 404 Page
+    'notfound.title': 'Az oldal nem található',
+    'notfound.message': 'Sajnáljuk, de a keresett oldal nem létezik vagy áthelyezésre került.',
+    'notfound.goHome': 'Vissza a főoldalra',
+    'notfound.goBack': 'Vissza az előző oldalra',
   },
   en: {
     // Header
@@ -186,6 +192,12 @@ const translations = {
     'footer.address.value': 'Budapest, Hungary',
     'footer.social': 'Social Media',
     'footer.copyright': 'MyWebsite. All rights reserved.',
+
+    // 404 Page
+    'notfound.title': 'Page Not Found',
+    'notfound.message': 'Sorry, the page you are looking for does not exist or has been moved.',
+    'notfound.goHome': 'Back to Home',
+    'notfound.goBack': 'Go Back',
   }
 }
 
@@ -193,7 +205,7 @@ export function LanguageProvider({ children }: { children: any }) {
   const [language, setLanguage] = useState<Language>('hu')
 
   const t = (key: string): string => {
-    const translation = translations[language][key as keyof typeof translations.hu]
+    const translation = (translations[language] as any)[key]
     return translation || key
   }
 

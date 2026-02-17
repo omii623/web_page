@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { useLanguage } from '../../contexts/LanguageContext'
-import './Main.css'
 
 function Main() {
   const [count, setCount] = useState(0)

@@ -1,7 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
-import { useLanguage } from '../contexts/LanguageContext'
-import LanguageToggle from './LanguageToggle'
-import './Header.css'
+import { useLanguage } from '../../contexts/LanguageContext'
+import LanguageToggle from '../lang/LanguageToggle'
 
 function Header() {
   const location = useLocation()

@@ -1,5 +1,4 @@
-import { useLanguage } from '../contexts/LanguageContext'
-import './Footer.css'
+import { useLanguage } from '../../contexts/LanguageContext'
 
 function Footer() {
   const currentYear = new Date().getFullYear()

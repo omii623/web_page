@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { useLanguage } from '../../contexts/LanguageContext'
-import './Game.css'
 
 interface Score {
   score: number

@@ -1,5 +1,4 @@
 import { useLanguage } from '../../contexts/LanguageContext'
-import './About.css'
 
 function About() {
   const { t } = useLanguage()

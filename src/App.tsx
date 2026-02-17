@@ -1,10 +1,10 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
-import './App.css'
-import Header from './components/Header'
-import Footer from './components/Footer'
+import Header from './components/header/Header'
+import Footer from './components/footer/Footer'
 import Main from './pages/main/Main'
 import About from './pages/about/About'
 import Game from './pages/game/Game'
+import NotFound from './pages/notfound/NotFound'
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
           <Route path="/index" element={<Main />} />
           <Route path="/about" element={<About />} />
           <Route path="/game" element={<Game />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
